@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ConsultaVueloPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Consulta de Vuelo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <header> Vuelos Europeos S.A &nbsp; <i class="fas fa-plane"></i>
+  </header>
+
+  <body>
+    <ion-list id="lista-vuelos">
+      <ion-item no-lines *ngFor="let avion of vuelos$ | async">
+        <ion-item class="infovuelo">
+          <p>
+            <span style="float:left;"><strong>Destino: </strong>{{avion.destino}}</span>
+            <span style="float:right;"><strong>Origen: </strong>{{avion.origen}}</span>
+          </p>
+          <p>
+            <span style="float:left;"><strong>Hora ida: </strong>{{avion.horaida}}</span>
+            <span style="float:right;"><strong>Hora vuelta: </strong>{{avion.horavuelta}}</span>
+          </p>
+          <p><strong>Precio: </strong>{{avion.precio}}€</p>
+          <button ion-button block class="reservar" (click)="onLoadFacturar([avion.facturar])">{{avion.facturar}}</button>
+        </ion-item>
+      </ion-item>
+    </ion-list>
+
+  </body>
+</ion-content>

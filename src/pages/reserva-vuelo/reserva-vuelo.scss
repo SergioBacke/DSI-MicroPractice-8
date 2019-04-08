@@ -1,0 +1,84 @@
+page-reserva-vuelo {
+
+
+/*************************
+****** Buscador **********
+*************************/
+
+#search {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 0px;
+    padding-right: 0px;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    margin: 0px;
+    font-size: 10px;
+}
+
+input[type="date"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    margin: 0px;
+    font-size: 10px;
+    flex-direction: row;
+}
+
+.reservar {
+    background-color: #d50000;
+    height: 40px;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+
+.reservar:hover {
+    background-color:#ff5131 !important;
+}
+body{
+    padding-right: 32px;
+}
+.item-md.item-block .item-inner{
+    padding:0px;
+}
+
+.label-md{
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+/*************************
+****** Vuelos **********
+*************************/
+
+.infovuelo p{
+    margin-bottom: 15px;
+}
+
+#lista-vuelos{
+    width: 86%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding: 0px;
+    padding-right: 0px;
+}
+.infovuelo{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    padding:0px 16px;
+}
+
+}
